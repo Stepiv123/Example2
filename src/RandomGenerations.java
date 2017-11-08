@@ -92,6 +92,7 @@ public class RandomGenerations {
      */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        print("Welcome to RandomArrayProject");
         print("Enter length of array:");
         while (!scan.hasNextInt()) {
             scan.next();

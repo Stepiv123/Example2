@@ -1,2 +1,2 @@
 # Example2
-Random array of prime numbers.
+Programm generate random array of prime numbers.

@@ -92,13 +92,13 @@ public class RandomGenerations {
      */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        print("Welcome to RandomArrayProject");
         print("Enter length of array:");
         while (!scan.hasNextInt()) {
             scan.next();
             print("Int not find, try else:");
         }
         /*extract variable*/
+        print("Result:");
         int length = scan.nextInt();
         print(getArray(length));
     }

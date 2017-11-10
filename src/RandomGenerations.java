@@ -104,6 +104,20 @@ public class RandomGenerations {
     }
 
     /**
+     * <b>Description:</b> Get sum of array
+     *
+     * @param array array of integer
+     * @return sum
+     */
+    private static long getSum(int[] array) {
+        long sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum;
+    }
+
+    /**
      * <b>Description:</b>Get String contain random array of prime numbers
      *
      * @param length of array
@@ -111,7 +125,9 @@ public class RandomGenerations {
      */
     private static String getArray(int length) {
         /*extract method*/
-        return Arrays.toString(getRandomArray(length));
+        int[] array = getRandomArray(length);
+        /*another function*/
+        return Arrays.toString(array) + " Sum:" + Long.toString(getSum(array));
     }
 
     /**
